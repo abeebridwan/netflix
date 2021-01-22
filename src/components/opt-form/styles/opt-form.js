@@ -18,8 +18,14 @@ export const Input = styled.input`
   width: 100%;
   border: 0;
   padding: 10px;
-  height: 70px;
+  height: 60px;
   box-sizing: border-box;
+  border-radius: 2px;
+
+  &:focus {
+    border: 0;
+    outline: 1px solid blue;
+  }
 `;
 
 export const Break = styled.div`
@@ -30,7 +36,6 @@ export const Break = styled.div`
 export const Button = styled.button`
   display: flex;
   align-items: center;
-  height: 70px;
   background: #e50914;
   color: white;
   text-transform: uppercase;
@@ -38,6 +43,7 @@ export const Button = styled.button`
   font-size: 26px;
   border: 0;
   cursor: pointer;
+  margin-left: 1px;
 
   img {
     margin-left: 10px;
