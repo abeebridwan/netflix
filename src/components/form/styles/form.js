@@ -12,12 +12,17 @@ export const Container = styled.div`
   max-width: 450px;
   padding: 60px 68px 40px;
   margin-bottom: 100px;
+  box-sizing: border-box;
+
+  @media (max-width: 600px) {
+    padding: 60px 40px 40px;
+  }
 `;
 
 export const Error = styled.div`
   background: #e87c03;
   border-radius: 4px;
-  font-size: 14px;
+  font-size: 1rem;
   margin: 0 0 16px;
   color: white;
   padding: 15px 20px;
@@ -32,20 +37,20 @@ export const Base = styled.form`
 
 export const Title = styled.h1`
   color: #fff;
-  font-size: 32px;
+  font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 28px;
 `;
 
 export const Text = styled.p`
   color: #737373;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
 `;
 
 export const TextSmall = styled.p`
   margin-top: 10px;
-  font-size: 13px;
+  font-size: 0.7rem;
   line-height: normal;
   color: #8c8c8c;
 `;

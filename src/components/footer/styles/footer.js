@@ -16,12 +16,25 @@ export const Column = styled.div`
   display: flex;
   flex-direction: column;
   text-align: left;
+
+  @media (min-width: 50px) and (max-width: 375px) {
+    &:nth-last-of-type(-n + 3) {
+      display: none;
+    }
+  }
+
+  @media (max-width: 600px) and (min-width: 376px) {
+    &:nth-last-of-type(4) {
+      display: none;
+    }
+  }
 `;
 
 export const Row = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-  grid-gap: 15px;
+  row-gap: 30px;
+  column-gap: 15px;
 
   @media (max-width: 1000px) {
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));

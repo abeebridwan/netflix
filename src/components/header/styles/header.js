@@ -39,6 +39,11 @@ export const ButtonLink = styled(ReachRouterLink)`
   &:hover {
     background: #f40612;
   }
+
+  @media (max-width: 400px) {
+    padding: 8px 10px;
+    font-size: 10px;
+  }
 `;
 
 export const Feature = styled(Container)`
@@ -60,5 +65,10 @@ export const Logo = styled.img`
   @media (min-width: 1449px) {
     height: 45px;
     width: 167px;
+  }
+
+  @media (max-width: 400px) {
+    width: 100px;
+    margin-right: 20px;
   }
 `;
