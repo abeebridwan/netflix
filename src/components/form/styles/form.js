@@ -15,7 +15,9 @@ export const Container = styled.div`
   box-sizing: border-box;
 
   @media (max-width: 600px) {
-    padding: 60px 40px 40px;
+    padding: 20px;
+    margin-bottom: 50px;
+    min-height: 460px;
   }
 `;
 
@@ -37,7 +39,7 @@ export const Base = styled.form`
 
 export const Title = styled.h1`
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 32px;
   font-weight: bold;
   margin-bottom: 28px;
 `;
@@ -76,6 +78,12 @@ export const Input = styled.input`
 
   &:last-of-type {
     margin-bottom: 30px;
+  }
+
+  &:focus {
+    background-color: rgb(232, 240, 254);
+    outline: 0;
+    color: #333;
   }
 `;
 

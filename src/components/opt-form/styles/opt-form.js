@@ -45,6 +45,10 @@ export const Button = styled.button`
   cursor: pointer;
   margin-left: 1px;
 
+  @media (max-width: 1000px) {
+    padding: 0 15px !important;
+    font-size: 18px;
+  }
   img {
     margin-left: 10px;
     filter: brightness(0) invert(1);

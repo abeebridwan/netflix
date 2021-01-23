@@ -17,14 +17,18 @@ export const Column = styled.div`
   flex-direction: column;
   text-align: left;
 
-  @media (min-width: 50px) and (max-width: 375px) {
-    &:nth-last-of-type(-n + 3) {
+  @media (min-width: 300px) and (max-width: 600px) {
+    &:nth-last-of-type(-n + 2) {
       display: none;
     }
+    &:nth-child(2) {
+      padding-left: 30px;
+    }
+    font-size: 10px;
   }
 
-  @media (max-width: 600px) and (min-width: 376px) {
-    &:nth-last-of-type(4) {
+  @media (max-width: 300px) {
+    &:nth-last-of-type(-n + 3) {
       display: none;
     }
   }
@@ -32,12 +36,12 @@ export const Column = styled.div`
 
 export const Row = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   row-gap: 30px;
   column-gap: 15px;
 
   @media (max-width: 1000px) {
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
   }
 `;
 

@@ -6,6 +6,19 @@ export const Background = styled.div`
   flex-direction: column;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.35)),
     url(${({ src }) => (src ? `../images/misc/${src}.jpg` : '../images/misc/home-bg.jpg')}) top left / cover no-repeat;
+  @media (max-width: 800px) {
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.98),
+        rgba(0, 0, 0, 0.28),
+        rgba(0, 0, 0, 0.25),
+        rgba(0, 0, 0, 0.1),
+        rgba(0, 0, 0, 0.25),
+        rgba(0, 0, 0, 0.28),
+        rgba(0, 0, 0, 0)
+      ),
+      url(${({ src }) => (src ? `../images/misc/${src}.jpg` : '../images/misc/home-bg.jpg')}) top left / cover no-repeat;
+  }
 `;
 
 export const Container = styled.div`
