@@ -1,8 +1,8 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch } from 'react-router-dom';
 import * as ROUTES from './constants/routes';
 import { Home, Browse, Signin, Signup } from './pages';
-import { IsUserRedirect } from './helpers/routes';
+import { ProtectedRoute, IsUserRedirect } from './helpers/routes';
 
 function App() {
   const user = {};
@@ -16,12 +16,12 @@ function App() {
         <IsUserRedirect exact path={ROUTES.SIGN_UP} loggedInPath={ROUTES.BROWSE} user={user}>
           <Signup />
         </IsUserRedirect>
-        <Route exact path={ROUTES.BROWSE}>
+        <ProtectedRoute exact path={ROUTES.BROWSE} user={user}>
           <Browse />
-        </Route>
-        <Route exact path={ROUTES.HOME}>
+        </ProtectedRoute>
+        <IsUserRedirect exact path={ROUTES.HOME} loggedInPath={ROUTES.BROWSE} user={user}>
           <Home />
-        </Route>
+        </IsUserRedirect>
       </Switch>
     </Router>
   );
