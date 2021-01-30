@@ -1,4 +1,5 @@
-import styled from 'styled-components/macro';
+/* eslint-disable no-undef */
+import styled, { keyframes } from 'styled-components/macro';
 
 export const Container = styled.div`
   display: flex;
@@ -34,13 +35,22 @@ export const Name = styled.p`
     color: #e5e5e5;
   }
 `;
+const transition = keyframes`  
+  from {
+    width: 3%;
+  }
 
+  to {
+    width: 100%;
+  }
+`;
 export const Picture = styled.img`
-  width: 100%;
+  width: 3%;
   max-width: 150px;
   height: auto;
   border: 3px solid black;
   cursor: pointer;
+  animation: ${transition} 4s ease-out -0.2s forwards;
 `;
 
 export const Item = styled.li`

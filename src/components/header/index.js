@@ -5,13 +5,7 @@ import { Link as ReachRouterLink } from 'react-router-dom';
 import { Container, Background, ButtonLink, Feature, Logo } from './styles/header';
 
 export default function Header({ bg = true, children, ...restProps }) {
-  return bg ? (
-    <Background data-testid="header-bg" {...restProps}>
-      {children}
-    </Background>
-  ) : (
-    children
-  );
+  return bg ? <Background {...restProps}>{children}</Background> : children;
 }
 
 Header.Frame = function HeaderFrame({ children, ...restProps }) {
