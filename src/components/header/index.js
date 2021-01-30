@@ -2,7 +2,7 @@
 /* eslint-disable react/prop-types */
 import React, { useState } from 'react';
 import { Link as ReachRouterLink } from 'react-router-dom';
-import { Container, Background, ButtonLink, Feature, Logo } from './styles/header';
+import { Container, Background, ButtonLink, Feature, Logo, Text, FeatureCallOut } from './styles/header';
 
 export default function Header({ bg = true, children, ...restProps }) {
   return bg ? <Background {...restProps}>{children}</Background> : children;
@@ -18,6 +18,18 @@ Header.Logo = function HeaderLogo({ to, ...restProps }) {
       <Logo {...restProps} />
     </ReachRouterLink>
   );
+};
+
+Header.Feature = function HeaderFeature({ children, ...restProps }) {
+  return <Feature>{children}</Feature>;
+};
+
+Header.Text = function HeaderText({ children, ...restProps }) {
+  return <Text {...restProps}>{children}</Text>;
+};
+
+Header.FeatureCallOut = function HeaderFeatureCallOut({ children, ...restProps }) {
+  return <FeatureCallOut {...restProps}>{children}</FeatureCallOut>;
 };
 
 Header.ButtonLink = function HeaderButtonLink({ children, ...restProps }) {
