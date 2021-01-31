@@ -145,11 +145,7 @@ export const Dropdown = styled.div`
       margin-bottom: 0;
     }
 
-    ${Link} {
-      cursor: pointer;
-    }
-
-    ${Picture} {
+    ${Link}, ${Picture} {
       cursor: default;
     }
   }
