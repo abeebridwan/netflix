@@ -2,7 +2,20 @@
 /* eslint-disable react/prop-types */
 import React, { useState } from 'react';
 import { Link as ReachRouterLink } from 'react-router-dom';
-import { Container, Background, ButtonLink, Feature, Logo, Text, FeatureCallOut } from './styles/header';
+import {
+  Container,
+  Background,
+  ButtonLink,
+  Feature,
+  Logo,
+  Text,
+  FeatureCallOut,
+  Link,
+  Group,
+  Picture,
+  Profile,
+  Dropdown,
+} from './styles/header';
 
 export default function Header({ bg = true, children, ...restProps }) {
   return bg ? <Background {...restProps}>{children}</Background> : children;
@@ -32,6 +45,26 @@ Header.FeatureCallOut = function HeaderFeatureCallOut({ children, ...restProps }
   return <FeatureCallOut {...restProps}>{children}</FeatureCallOut>;
 };
 
+Header.TextLink = function HeaderTextLink({ children, ...restProps }) {
+  return <Link {...restProps}>{children}</Link>;
+};
+
 Header.ButtonLink = function HeaderButtonLink({ children, ...restProps }) {
   return <ButtonLink {...restProps}>{children}</ButtonLink>;
+};
+
+Header.Group = function HeaderGroup({ children, ...restProps }) {
+  return <Group {...restProps}>{children}</Group>;
+};
+
+Header.Profile = function HeaderProfile({ children, ...restProps }) {
+  return <Profile {...restProps}>{children}</Profile>;
+};
+
+Header.Picture = function HeaderPicture({ src, ...restProps }) {
+  return <Picture {...restProps} src={`/images/users/${src}.png`} />;
+};
+
+Header.Dropdown = function HeaderDropdown({ children, ...restProps }) {
+  return <Dropdown {...restProps}>{children}</Dropdown>;
 };
