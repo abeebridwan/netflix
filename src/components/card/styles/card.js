@@ -84,7 +84,7 @@ export const Feature = styled.div`
 
   @media (max-width: 1000px) {
     height: auto;
-    background-size: auto;
+    background-size: contain;
 
     ${Title} {
       font-size: 20px;
@@ -196,6 +196,8 @@ export const Image = styled.img`
   max-width: 305px;
   cursor: pointer;
   height: auto;
+  min-height: 11.45vh;
   padding: 0;
   margin: 0;
+  object-fit: cover;
 `;

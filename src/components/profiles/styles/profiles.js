@@ -37,20 +37,20 @@ export const Name = styled.p`
 `;
 const transition = keyframes`  
   from {
-    width: 3%;
+    transform:scale(0.35,0.35);
   }
 
   to {
-    width: 100%;
+    transform:scale(1,1);
   }
 `;
 export const Picture = styled.img`
-  width: 3%;
+  width: 100%;
   max-width: 150px;
   height: auto;
   border: 3px solid black;
   cursor: pointer;
-  animation: ${transition} 4s ease-out -0.2s forwards;
+  animation: ${transition} 6s ease-out -0.3s forwards;
 `;
 
 export const Item = styled.li`
