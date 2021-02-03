@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable jsx-a11y/media-has-caption */
 /* eslint-disable react/prop-types */
 import React, { useState, useContext, createContext } from 'react';
@@ -21,7 +22,7 @@ Player.Video = function PlayerVideo({ src, ...restProps }) {
 
   return showPlayer
     ? ReactDOM.createPortal(
-        <Overlay onClick={() => setShowPlayer(false)}>
+        <Overlay onClick={() => setShowPlayer(false)} data-testid="player">
           <Inner>
             <video id="netflix-player" controls>
               <source src={src} type="video/mp4" />
