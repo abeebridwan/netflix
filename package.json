@@ -1,7 +1,7 @@
 {
   "name": "netflix",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {    
     "firebase": "^8.3.2",
     "fuse.js": "^6.4.6",
