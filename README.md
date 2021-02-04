@@ -36,6 +36,8 @@ Compound components (just a design pattern) used to build the components, and th
 
 or check it out  here: ............
 
+test and sign-in to see and feel the app
+
 ## Screenshots
 Netflix Browse Page:<br><br>
 ![Browse page](pictures/netflix-preview.png)<br><br>
