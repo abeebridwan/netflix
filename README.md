@@ -34,9 +34,9 @@ Compound components (just a design pattern) used to build the components, and th
   - unit and integration test done
   - many more - find out by checking the app by running it locally
 
-or check it out  here: ............
+or check it out  here: https://olu-netflix.netlify.app/
 
-test and sign-in to see feel the app
+test and sign-in to see and feel the app
 
 ## Screenshots
 Netflix Browse Page:<br><br>
@@ -66,12 +66,13 @@ Check out [package.json](package.json).
 - Clone the project and run `yarn` to add packages.
 - Before you start the app, put your `firebase API data` inside lib/firebase.prod.js
 
-or check it out  here: 
+or check it out  here: https://olu-netflix.netlify.app/
 
 ## Deployment
 - deployed with Netlify
   
-  Take a look at the live version [here.....](....)  
+Take a look at the live version [here.....](https://olu-netflix.netlify.app/)  
+
 ## Author
 Abeeb Ridwan Olumide
 
