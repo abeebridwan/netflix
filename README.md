@@ -76,11 +76,5 @@ Take a look at the live version [here.....](https://olu-netflix.netlify.app/)
 ## Author
 Abeeb Ridwan Olumide
 
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to
-discuss what you would like to change.
-
-Please make sure to test as appropriate.
-
 ## License
 [MIT](LICENSE.md)
