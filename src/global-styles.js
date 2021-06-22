@@ -10,4 +10,9 @@ html, body {
     background-color: #000000;
     color: #333333;
     font-size: 16px;
-}`;
+ & body {    
+    max-width: 1500px;
+    margin: auto;
+    }
+}
+`;
